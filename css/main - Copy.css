@@ -1,0 +1,257 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, ody, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, adress, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***********************End of CSS reset **************************/
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-family: 'Balthazar';
+}
+
+p {
+	font-family: 'Balthazar';
+	font-size: 20px;
+}
+
+.navbar-below {
+	background-color: rgba(0,0,0,0.3);
+	background-color: #4BA777;
+	background-color: #AAA06C;
+	height:100px;
+	z-index: 0;
+	display: block;
+	position: absolute;
+	top:0;
+	width: 100%;
+}
+
+.navbar {
+	text-align: center;
+	background-color: #990000; /* this should be stored as a variable */
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	/* border: 10px solid #E67300; 
+	border-width: 0px 0px 10px 0px;*/
+}
+
+.navbar a {
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px 0px;
+	margin: 10px 0px;
+	color:#CCCCCC; 
+	font-family: 'Metrophobic', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	font-variant: small-caps; 
+	text-decoration: none;
+	z-index: 2;
+}
+
+.navbar a:hover {
+	color: #ffffff;
+}
+
+.navbar a::before, .navbar a::after {
+	color: rgba(0,0,0,0.0);
+}
+
+.navbar a::before {
+	content: "{ ";
+}
+
+.navbar a::after {
+	content: " }";
+}
+
+.navbar a:hover::before, .navbar a:hover::after {
+	color: #ffffff;
+}
+
+.nav-logo {
+	display: inline-block;
+	position: relative;
+	width: 200px;
+	height: 70px;
+	margin: 0 10px;
+	background-color: #CC2C2C;
+	z-index: 3;
+	border: 10px solid #ffffff; 
+	border-width: 0px 5px 5px 5px;
+	background-image: url('../img/pushBC1.jpg');
+	background-position: center;
+	background-size: 90%;
+	background-repeat: no-repeat;
+}
+
+#review {
+	color: #4BA777;
+}
+
+.nav-right, .nav-left {
+	display: inline-block;
+	position: absolute;
+	width: 200px;
+	height:100%;
+	background-color: #009966;
+	background-color: #E67300;
+	
+}
+
+.nav-right {
+	width: auto;
+	right: 0px;
+	border-bottom-right-radius: 5px;
+	background: -webkit-linear-gradient(left, #E67300 , #990000); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(left, #E67300 , #990000); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(left, #E67300 , #990000); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to left, #E67300 , #990000); /* Standard syntax */
+}
+
+.nav-left {
+	left: 0px;
+	border-bottom-left-radius: 5px;
+	background: -webkit-linear-gradient(right, #E67300 , #990000); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #E67300 , #990000); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #E67300 , #990000); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #E67300 , #990000); /* Standard syntax */
+}
+
+.nav-logo, .navbar {
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.8); 
+}
+
+.nav-logo {
+	border-radius: 0px 0px 5px 5px;
+	}
+
+.sidebar {
+	background-color: #E6B17C;
+	background-color: #bbbbbb;
+	background-color: #AAA06C;
+	height:100px;
+	width: 100%;
+	position: fixed;
+	z-index: 0;
+	top:0;
+}
+
+.sidebar-right {
+	right: 0;
+	border-bottom-left-radius: 5px;
+}
+
+.sidebar-left {
+	left: 0;
+}
+
+.container {
+	display: block;
+	width: 60%;
+	height: 800px;
+	margin: 150px auto 0px auto;
+}
+
+/* following button code used from Bootstrap */
+
+.button {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+
+  font-family: 'Metrophobic', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 4px;
+  font-variant: small-caps;
+}
+
+.button-group-right {
+	position: absolute;
+	display: inline-block;
+	top:8px;
+	right:10px;
+}
+
+.review {
+	background: -webkit-linear-gradient(down, #E67300 , #dddddd); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(down, #E67300 , #dddddd); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(down, #E67300 , #dddddd); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom, #E67300 , #eeeeee); /* Standard syntax */
+	font-size: 20px;
+	position: relative;
+	top: 10px;
+	border: 1px solid #999999;
+}
+
+.glyphicon {
+	font-size: 10px;
+}
