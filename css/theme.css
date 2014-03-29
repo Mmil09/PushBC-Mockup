@@ -1,12 +1,10 @@
-@font-face {
-  font-family: 'Glyphicons Halflings';
-
-  src: url('fonts/glyphicons-halflings-regular.eot');
-  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
-}
-
 .section {
   padding: 20px;
+}
+
+hr {
+  margin: 10px;
+  border-top: 1px solid #CCCCCC;
 }
 
 .navbar, 
@@ -32,6 +30,7 @@
 .navbar-nav>.active>a {
   background-color: #CC2C2C;
   color: #ffffff;
+  background-image: none;
 }
 
 .dropdown-header {
@@ -111,14 +110,43 @@ body {
     margin: 0 auto;
 }
 
-#test {
-  color:white;
-  width: 100%;
-  display: block;
-  height: auto;
-  background-color: #444444;
+.row-centered {
+  margin: 0 auto;
 }
 
+#social {
+  width: 100%;
+}
+
+.footer-nav {
+  margin: 0 auto;
+  padding: 10px 0px;
+  width: 60%;
+}
+
+.footer-nav>li {
+  display: inline-block;
+  padding: 0px 15px;
+}
+
+.footer-nav>li>a>button {
+  width: 39px;
+}
+
+.footer-nav>div {
+  padding: 5px 0px;
+}
+
+.footer-brand {
+  float: right;
+  font-size: 11px;'
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+}
+
+.footer-brand::before {
+  content: "\00a9"
+}
 
 /*
 .navbar-top a:hover {
